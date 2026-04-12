@@ -6,7 +6,10 @@
 <meta name="keywords" content="Raysh App, download raysh, raysh apk, gaming app">
 <meta name="author" content="Raysh">
 <meta name="robots" content="index, follow">
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet"><style>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
 *{margin:0;padding:0;box-sizing:border-box}
 
 body{
@@ -40,8 +43,9 @@ nav{
 
 nav h2{
   font-family:Orbitron;
-  font-size:20px;
+  font-size:22px;
   color:#0284c7;
+  text-shadow:0 0 8px rgba(2,132,199,0.6);
 }
 
 section{padding:90px 18px 60px;text-align:center}
@@ -53,14 +57,26 @@ section{padding:90px 18px 60px;text-align:center}
   box-shadow:0 10px 25px rgba(0,0,0,0.1);
 }
 
-/* BIG HANDWRITING */
+/* ✨ PREMIUM HEADING STYLE (FIXED) */
 h1{
-  font-family:'Pacifico', cursive;
-  font-size:38px;
+  font-family:'Orbitron', sans-serif;
+  font-size:42px;
   color:#0284c7;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  text-shadow:
+    0 0 6px rgba(2,132,199,0.8),
+    0 0 12px rgba(14,165,233,0.6),
+    0 0 20px rgba(56,189,248,0.4);
 }
 
-p{color:#475569;margin-top:10px;font-size:14px}
+/* PARAGRAPH */
+p{
+  color:#475569;
+  margin-top:12px;
+  font-size:15px;
+  text-shadow:0 0 4px rgba(0,0,0,0.1);
+}
 
 /* BUTTON */
 .btn{
@@ -72,7 +88,8 @@ p{color:#475569;margin-top:10px;font-size:14px}
   color:white;
   cursor:pointer;
   font-weight:600;
-  letter-spacing:0.5px;
+  letter-spacing:1px;
+  font-family:Orbitron;
   box-shadow:0 10px 25px rgba(14,165,233,0.35);
   transition:all .3s ease;
   position:relative;
@@ -111,6 +128,9 @@ p{color:#475569;margin-top:10px;font-size:14px}
   border:1px solid #e2e8f0;
   padding:18px;
   border-radius:12px;
+  font-family:Orbitron;
+  letter-spacing:1px;
+  text-shadow:0 0 6px rgba(2,132,199,0.4);
 }
 
 .dark .card{background:#020617}
@@ -127,6 +147,8 @@ p{color:#475569;margin-top:10px;font-size:14px}
   width:120px;
   text-decoration:none;
   color:#0284c7;
+  font-family:Orbitron;
+  letter-spacing:1px;
   box-shadow:0 5px 15px rgba(0,0,0,0.1);
   transition:.3s;
 }
@@ -157,6 +179,7 @@ p{color:#475569;margin-top:10px;font-size:14px}
   padding:10px 15px;
   border-radius:10px;
   display:none;
+  font-family:Orbitron;
 }
 
 .badge{
@@ -168,19 +191,36 @@ p{color:#475569;margin-top:10px;font-size:14px}
   padding:8px 12px;
   border-radius:20px;
   font-size:11px;
+  font-family:Orbitron;
 }
 
-footer{text-align:center;padding:25px;font-size:12px;color:#64748b}
+footer{
+  text-align:center;
+  padding:25px;
+  font-size:12px;
+  color:#64748b;
+  font-family:Orbitron;
+}
 
-</style></head><body><nav>
+</style></head><body>
+
+<nav>
 <h2>Raysh</h2>
-</nav><div class="toggle" onclick="toggleMode()">🌙 Mode</div><section>
+</nav>
+
+<div class="toggle" onclick="toggleMode()">🌙 Mode</div>
+
+<section>
 <img src="logo.jpeg" class="logo">
 <h1 id="typing"></h1>
-<p>Fast. Secure. Designed for performance lovers.</p><a href="app.apk" download="RAYSH.apk">
+<p>Fast. Secure. Designed for performance lovers.</p>
+
+<a href="app.apk" download="RAYSH.apk">
 <button class="btn" onclick="showPopup()">Download App</button>
 </a>
-</section><section>
+</section>
+
+<section>
 <h1>Why Raysh?</h1>
 <div class="features">
 <div class="card">⚡ Blazing Speed</div>
@@ -188,13 +228,22 @@ footer{text-align:center;padding:25px;font-size:12px;color:#64748b}
 <div class="card">🎮 Premium UI</div>
 <div class="card">🌐 Smart Sync</div>
 </div>
-</section><section class="contact">
+</section>
+
+<section class="contact">
 <h1>Contact Support</h1>
 <div class="contact-grid">
 <a href="mailto:raysh.official4971@gmail.com" class="contact-box">📧 Email</a>
 <a href="https://instagram.com/raysh_4971" class="contact-box">📸 Insta</a>
 </div>
-</section><div class="popup" id="popup">App Download Started 🚀</div><div class="badge">LIVE USERS: 2,184</div><footer>© 2026 Raysh App</footer><script>
+</section>
+
+<div class="popup" id="popup">App Download Started 🚀</div>
+<div class="badge">LIVE USERS: 2,184</div>
+
+<footer>© 2026 Raysh App</footer>
+
+<script>
 // DARK MODE
 function toggleMode(){
   document.body.classList.toggle("dark");
@@ -218,5 +267,7 @@ function typing(){
   }
 }
 typing();
-</script></body>
+</script>
+
+</body>
 </html>
